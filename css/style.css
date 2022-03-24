@@ -1,0 +1,133 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#141313), to(#888888));
+  background: linear-gradient(#141313, #888888);
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  color: #1B7FB2;
+  text-align: center;
+  font-weight: 600;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em 1em 0 1em;
+  height: 100%;
+}
+
+.intro div {
+  max-width: 37%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 665px) {
+  .intro div {
+    max-width: 29%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .intro div {
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .intro div {
+    max-width: 12%;
+  }
+}
+
+.intro h1 {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.nav-btn {
+  border: 3px solid white;
+  background: transparent;
+  padding: 2em;
+  color: white;
+  width: 130px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-btn__tl, .nav-btn__tr {
+  top: 0;
+  border-top: transparent;
+}
+
+.nav-btn__tl {
+  left: 0;
+  border-left: transparent;
+  border-radius: 0 0 8px 0;
+}
+
+.nav-btn__tr {
+  right: 0;
+  border-right: transparent;
+  border-radius: 0 0 0 8px;
+}
+
+.nav-btn__bl, .nav-btn__br {
+  bottom: 0;
+  border-bottom: transparent;
+}
+
+.nav-btn__bl {
+  left: 0;
+  border-left: transparent;
+  border-radius: 0 8px 0 0;
+}
+
+.nav-btn__br {
+  right: 0;
+  border-right: transparent;
+  border-radius: 8px 0 0 0;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background-color: #1B7FB2;
+  border-color: #1B7FB2;
+}
+/*# sourceMappingURL=style.css.map */
