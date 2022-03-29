@@ -1,0 +1,21 @@
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+
+  a {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+    .contact {
+        min-width: 600px;
+    }
+}

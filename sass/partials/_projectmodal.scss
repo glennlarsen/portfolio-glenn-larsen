@@ -1,0 +1,37 @@
+.modal-header {
+  display: block !important;
+  text-align: center;
+  color: $color-primary;
+
+  button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    margin: 0.5em 0;
+    font-style: italic;
+  }
+}
+
+.modal-content {
+  border: 3px solid $color-primary !important;
+}
+
+.modal-dialog {
+  max-width: 900px !important;
+}
+
+.modal-body {
+  text-align: center;
+
+  img {
+    min-height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+  }
+}

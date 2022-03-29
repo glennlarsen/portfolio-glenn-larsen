@@ -1,46 +1,54 @@
-html, body {
-    height: 100%;
-    margin: 0;
+
+html {
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5em 1em 0 1em;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em 1em 3em 1em;
+  height: 100%;
 }
 
 .intro {
+  div {
+    max-width: 37%;
+    margin: 0 auto;
 
-    div {
-        max-width: 37%;
-        margin: 0 auto;
-    
-        @media screen and (min-width: 665px) {
-            max-width: 29%;
-        }
-    
-        @media screen and (min-width: 850px) {
-            max-width: 20%;
-        }
-    
-        @media screen and (min-width: 1230px) {
-            max-width: 12%;
-        }
+    @media screen and (min-width: 665px) {
+      max-width: 29%;
     }
 
-    h1 {
-        max-width: 380px;
-        margin: 0 auto;
-        margin-bottom: 1em;
+    @media screen and (min-width: 850px) {
+      max-width: 20%;
     }
 
+    @media screen and (min-width: 1230px) {
+      max-width: 11%;
+    }
+  }
+
+  h1 {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
 }

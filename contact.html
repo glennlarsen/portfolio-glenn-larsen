@@ -11,17 +11,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio | Contact</title>
   </head>
   <body>
     <div class="container">
-        <button onclick="window.location.href = 'index.html';" class="nav-btn nav-btn__tl">Home</button>
-        <button onclick="window.location.href = 'projects.html';" class="nav-btn nav-btn__tr">Projects</button>
-        <button onclick="window.location.href = 'about.html';" class="nav-btn nav-btn__bl">About</button>
-        <button onclick="window.location.href = 'contact.html';" class="nav-btn nav-btn__br active">Contact</button>
+        <div class="navigation"></div>
 
-        <section class="intro">
+        <section class="contact">
             <h1>Contact</h1>
+
+            <p>Contact me by <a href="mailto:glenn_lar@hotmail.com?subject=Contact me">email</a> or use the form below.</p>
+
+            <form class="d-flex flex-column justify-content-center" action="submit">
+            <div class="mb-3">
+              <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="text" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button class="btn-submit">Send</button>
+          </form>
             
         </section>
     </div>
@@ -32,5 +44,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/contact.js" type="module"></script>
   </body>
 </html>
