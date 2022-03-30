@@ -22,8 +22,17 @@ h1 {
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
 }
 
 html {
@@ -65,7 +74,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3em 1em 3em 1em;
+  padding: 3em 1em;
   height: 100%;
   overflow: hidden;
 }
@@ -241,7 +250,7 @@ h3 {
 .carousel {
   position: relative;
   width: 85%;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .carousel_track-container {
@@ -331,6 +340,7 @@ h3 {
   position: absolute;
   right: 15px;
   top: 15px;
+  cursor: pointer;
 }
 
 .modal-header .project-links {
