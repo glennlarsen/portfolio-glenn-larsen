@@ -67,7 +67,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3em 1em;
+  padding: 4em 1em;
   height: 100%;
   overflow: hidden;
 }
@@ -321,10 +321,6 @@ h3 {
   .carousel_slide {
     min-width: 32.7%;
   }
-}
-
-.modal {
-  overflow-y: scroll !important;
 }
 
 .modal-header {
