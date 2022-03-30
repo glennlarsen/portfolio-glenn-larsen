@@ -67,7 +67,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2em 1em;
+  padding: 4em 1em;
   height: 100%;
   overflow: hidden;
 }
@@ -75,7 +75,6 @@ body {
 .intro div {
   max-width: 33%;
   margin: 0 auto;
-  padding: 1em 0;
 }
 
 @media screen and (min-width: 665px) {
@@ -99,7 +98,7 @@ body {
 .intro h1 {
   max-width: 380px;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .nav-btn {

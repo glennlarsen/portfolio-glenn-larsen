@@ -4,7 +4,6 @@
 }
 
 
-
 html,
 body {
   height: 100%;
@@ -30,7 +29,6 @@ body {
   div {
     max-width: 33%;
     margin: 0 auto;
-    padding: 1em 0;
 
     @media screen and (min-width: 665px) {
       max-width: 29%;
@@ -48,6 +46,6 @@ body {
   h1 {
     max-width: 380px;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 }
