@@ -323,6 +323,10 @@ h3 {
   }
 }
 
+.modal {
+  overflow-y: scroll !important;
+}
+
 .modal-header {
   display: block !important;
   text-align: center;
