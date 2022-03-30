@@ -9,6 +9,12 @@ carousel(projectList);
 const modal = document.querySelector(".modal-container");
 
 projectList.forEach(function (project) {
+
+    let toolList = "";
+    project.tools.forEach(function (tool) {
+        toolList += `<li>${tool}</li>`;
+    });
+
     modal.innerHTML += `<!-- Modal -->
                             <div class="modal fade" id="modal${project.id}" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
                               <div class="modal-dialog">
@@ -24,7 +30,18 @@ projectList.forEach(function (project) {
                                   </div>
                                   <div class="modal-body">
                                   <div><img src="${project.image}"></div>
+                                  <div class="project-info">
+                                  <div>
                                     <h5>About this Project</h5>
+                                    <p>${project.about}</p>
+                                    </div>
+                                    <div>
+                                    <h5>Tools Used</h5>
+                                    <ul>
+                                    ${toolList}
+                                    </ul>
+                                    </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
