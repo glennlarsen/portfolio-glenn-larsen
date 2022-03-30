@@ -97,8 +97,7 @@ body {
 
 .intro h1 {
   max-width: 380px;
-  margin: 0 auto;
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 .nav-btn {
