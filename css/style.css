@@ -18,7 +18,7 @@ h1, h4 {
 
 h1 {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -67,10 +67,11 @@ body {
           justify-content: center;
   padding: 3em 1em 3em 1em;
   height: 100%;
+  overflow: hidden;
 }
 
 .intro div {
-  max-width: 37%;
+  max-width: 33%;
   margin: 0 auto;
 }
 

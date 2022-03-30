@@ -26,11 +26,12 @@ body {
   justify-content: center;
   padding: 3em 1em 3em 1em;
   height: 100%;
+  overflow: hidden;
 }
 
 .intro {
   div {
-    max-width: 37%;
+    max-width: 33%;
     margin: 0 auto;
 
     @media screen and (min-width: 665px) {
