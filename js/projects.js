@@ -6,6 +6,8 @@ navigation();
 
 carousel(projectList);
 
+document.body.style.overflow = 'hidden';
+
 const modal = document.querySelector(".modal-container");
 
 projectList.forEach(function (project) {
