@@ -6,7 +6,6 @@ navigation();
 
 carousel(projectList);
 
-document.body.style.overflow = 'hidden';
 
 const modal = document.querySelector(".modal-container");
 
@@ -19,7 +18,7 @@ projectList.forEach(function (project) {
 
     modal.innerHTML += `<!-- Modal -->
                             <div class="modal fade" id="modal${project.id}" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                   <div class="modal-header">
                                     <h4 class="modal-title" id="modalLabel">${project.title}</h4>
