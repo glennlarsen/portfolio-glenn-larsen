@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4em 1em;
+  padding: 2em 1em;
   height: 100%;
   overflow: hidden;
 }
@@ -30,6 +30,7 @@ body {
   div {
     max-width: 33%;
     margin: 0 auto;
+    padding: 1em 0;
 
     @media screen and (min-width: 665px) {
       max-width: 29%;
