@@ -256,6 +256,7 @@ h3 {
 .contact {
   max-width: 700px;
   margin: 0 auto;
+  overflow-y: scroll;
 }
 
 .contact a {

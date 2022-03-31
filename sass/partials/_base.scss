@@ -1,36 +1,36 @@
 body {
-    font-family: $font-primary;
-    background: $background-color;
-    background-repeat: no-repeat;
-    line-height: 1.5;
+  font-family: $font-primary;
+  background: $background-color;
+  background-repeat: no-repeat;
+  line-height: 1.5;
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .content {
-    text-align: center;
-    color: white;
-    z-index: 100;
+  text-align: center;
+  color: white;
+  z-index: 100;
 }
 
 ul {
-    list-style: none;
-    text-align: left;
-  }
+  list-style: none;
+  text-align: left;
+}
 
-  li {
-    display: flex;
-    gap: 10px;
-  }
-  
-  ul li::before {
-    content: "\2022";
-    color: $color-primary; /* Change the color */
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
+li {
+  display: flex;
+  gap: 10px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: $color-primary; /* Change the color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
