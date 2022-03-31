@@ -21,14 +21,15 @@
         <h1>About me</h1>
         <p>
           My name is Glenn Larsen. I am a 31 year old man born and raised in
-          Bergen, Norway. I am currently finishing my 2nd year in Frontend Development
-          at Noroff while working part time for SIXT car rental.
+          Bergen, Norway. I am currently finishing my 2nd year in Frontend
+          Development at Noroff while working part time for SIXT car rental.
         </p>
 
         <div class="cv">
           <a href="./Content/Glenn-Larsen-CV.pdf" download>Download CV</a>
         </div>
 
+        <!-- Accordion -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -51,13 +52,17 @@
             >
               <div class="accordion-body">
                 <ul>
-                  <li>BI Norwegian Business school - Bachelor in economics</li>
                   <li>
-                    Noroff School of Technology and digital Media - Frontend
-                    developer
+                    BI Norwegian Business school - Bachelor in economics<br />2009
+                    - 2012
                   </li>
                   <li>
-                    CLS Language school Bangkok - Thai Language and culture
+                    Noroff School of Technology and digital Media - Frontend
+                    developer<br />2020 - Current
+                  </li>
+                  <li>
+                    CLS Language school Bangkok - Thai Language and culture<br />2015
+                    - 2017
                   </li>
                 </ul>
               </div>
@@ -84,9 +89,18 @@
             >
               <div class="accordion-body">
                 <ul>
-                  <li>Sixt Car Rental - Rental agent</li>
-                  <li>Sixt Car Rental - Branch Manager</li>
-                  <li>Hjemferd.no - Operational Manager</li>
+                  <li>
+                    Sixt Car Rental - Rental agent<br />
+                    2010 - 2013 / 2017 - Current
+                  </li>
+                  <li>
+                    Sixt Car Rental - Branch Manager<br />
+                    2013 - 2015
+                  </li>
+                  <li>
+                    Hjemferd.no - Operational Manager<br />
+                    2021 - Current
+                  </li>
                 </ul>
               </div>
             </div>
@@ -113,17 +127,129 @@
               <div class="accordion-body">
                 <ul>
                   <li>HTML/CSS</li>
-                  <li>Javascript</li>
+                  <li>Javascript/React</li>
                   <li>SASS</li>
                   <li>Adobe Photoshop</li>
                   <li>Adobe XD</li>
                   <li>Bootstrap</li>
                   <li>Strapi API</li>
+                  <li>GIThub/GITlab</li>
+                  <li>Wordpress CMS</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="education-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#education"
+              type="button"
+              role="tab"
+              aria-controls="education"
+              aria-selected="true"
+            >
+              Education
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="experience-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#experience"
+              type="button"
+              role="tab"
+              aria-controls="experience"
+              aria-selected="false"
+            >
+              Experience
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="skills-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#skills"
+              type="button"
+              role="tab"
+              aria-controls="skills"
+              aria-selected="false"
+            >
+              My Skills
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="education"
+            role="tabpanel"
+            aria-labelledby="education-tab"
+          >
+            <ul>
+              <li>
+                BI Norwegian Business school - Bachelor in economics<br />2009 -
+                2012
+              </li>
+              <li>
+                Noroff School of Technology and digital Media - Frontend
+                developer<br />2020 - Current
+              </li>
+              <li>
+                CLS Language school Bangkok - Thai Language and culture<br />2015
+                - 2017
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="experience"
+            role="tabpanel"
+            aria-labelledby="experience-tab"
+          >
+            <ul>
+              <li>
+                Sixt Car Rental - Rental agent<br />
+                2010 - 2013 / 2017 - Current
+              </li>
+              <li>
+                Sixt Car Rental - Branch Manager<br />
+                2013 - 2015
+              </li>
+              <li>
+                Hjemferd.no - Operational Manager<br />
+                2021 - Current
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="skills"
+            role="tabpanel"
+            aria-labelledby="skills-tab"
+          >
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Javascript/React</li>
+              <li>SASS</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe XD</li>
+              <li>Bootstrap</li>
+              <li>Strapi API</li>
+              <li>GIThub/GITlab</li>
+              <li>Wordpress CMS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       </section>
     </div>
 

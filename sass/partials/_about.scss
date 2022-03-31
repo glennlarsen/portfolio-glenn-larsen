@@ -1,5 +1,7 @@
 .about {
     overflow-y: scroll;
+    max-width: 600px;
+    margin: 1em auto;
 }
 
 .cv {
@@ -8,6 +10,10 @@
     
     a {
         color: $color-primary;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
 
     }
 

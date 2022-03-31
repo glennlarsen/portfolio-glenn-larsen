@@ -2,6 +2,7 @@
 $color-primary: #1B7FB2;
 $color-primary-hover: rgba(27, 127, 178, 0.8);
 $background-color: linear-gradient(#141313, #888888 130%);
+$background-color-reverse: linear-gradient(#888888, #141313);
 
 $font-primary: 'Montserrat', sans-serif;
 
@@ -10,3 +11,9 @@ $accordion-button-color: white;
 $accordion-button-bg: $color-primary;
 $accordion-button-active-color: white;
 $accordion-button-active-bg: $color-primary;
+$accordion-border-radius: 8px !important;
+$accordion-inner-border-radius: 8px;
+
+$nav-tabs-link-active-color: white;
+$nav-tabs-link-active-bg: $color-primary;
+$nav-tabs-link-active-border-color: $color-primary;
