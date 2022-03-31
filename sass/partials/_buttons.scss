@@ -63,6 +63,7 @@
   max-width: 200px;
   align-self: center;
   cursor: pointer;
+  font-size: inherit;
 
   &:hover {
     background-color: $color-primary-hover;

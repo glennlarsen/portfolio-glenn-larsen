@@ -8,6 +8,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
   }
 
   .carousel_track {
@@ -45,12 +46,12 @@
   }
 
   .carousel_button-left {
-  left: -75px;
+  left: -68px;
   margin-left: 10px;
 }
 
 .carousel_button-right {
-  right: -75px;
+  right: -68px;
   margin-right: 10px;
 }
 

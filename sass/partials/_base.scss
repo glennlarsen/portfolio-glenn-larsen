@@ -2,6 +2,7 @@ body {
     font-family: $font-primary;
     background: $background-color;
     background-repeat: no-repeat;
+    line-height: 1.5;
 }
 
 img {
@@ -9,3 +10,28 @@ img {
     object-fit: cover;
 }
 
+.content {
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  li {
+    display: flex;
+    gap: 10px;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: $color-primary; /* Change the color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }

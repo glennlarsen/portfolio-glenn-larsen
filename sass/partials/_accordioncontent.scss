@@ -1,0 +1,41 @@
+.accordion-item {
+  &:first-child {
+    border-radius: 8px 8px 0 0 !important;
+
+    button {
+      border-radius: 8px 8px 0 0 !important;
+    }
+  }
+
+  &:last-child {
+    border-radius: 0 0 8px 8px !important;
+
+    button {
+      border-radius: 0 0 8px 8px !important;
+    }
+
+    .accordion-button {
+      &:not(.collapsed) {
+        border-radius: 0 !important;
+      }
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .accordion-body {
+    background: $background-color;
+
+    &:last-child {
+      border-radius: 0 0 8px 8px !important;
+    }
+  }
+
+  .accordion-button {
+    &:not(.collapsed) {
+      font-weight: bold;
+    }
+  }
+}
