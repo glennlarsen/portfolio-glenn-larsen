@@ -22,17 +22,29 @@
 
             <p>Contact me by <a href="mailto:glenn_lar@hotmail.com?subject=Portfolio | Contact Form">email</a> or use the form below.</p>
 
-            <form class="d-flex flex-column justify-content-center" action="submit">
+            <form id="form" class="d-flex flex-column justify-content-center" action="submit">
+              <div class="form-success" id="formSuccess">
+                Your message has been sent! I will contact you soon.
+              </div>
             <div class="mb-3">
-              <input type="name" class="form-control" id="name" placeholder="Name">
+              <input type="text" class="form-control" id="name" placeholder="Name">
+              <div class="form-error" id="nameError">
+                Please enter your name (Minimum 2 characters)
+              </div>
             </div>
             <div class="mb-3">
               <input type="email" class="form-control" id="email" placeholder="Email">
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
             </div>
             <div class="mb-3">
-              <textarea class="form-control" id="text" rows="4" placeholder="Your message..."></textarea>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+              <div class="form-error" id="messageError">
+                Please enter a message (Minimum 10 characters)
+              </div>
             </div>
-            <button class="btn-submit">Send</button>
+            <button type="submit" class="btn-submit">Send</button>
           </form>
             
         </section>

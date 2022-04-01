@@ -8600,6 +8600,19 @@ ul li::before {
   margin-left: -1em;
 }
 
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.form-success {
+  display: none;
+  color: green;
+  font-size: 1rem;
+}
+
 h1, h4 {
   color: #1B7FB2;
   text-align: center;
