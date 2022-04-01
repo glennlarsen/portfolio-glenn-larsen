@@ -8829,7 +8829,7 @@ h3 {
 .contact {
   max-width: 700px;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .contact a {
@@ -9112,7 +9112,7 @@ h3 {
 }
 
 .about {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-width: 600px;
   margin: 1em auto;
 }
