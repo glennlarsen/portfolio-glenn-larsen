@@ -6,8 +6,11 @@ const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const formSuccess = document.querySelector("#formSuccess");
+const contactButton = document.querySelector(".btn-submit");
 
 export function validateContact() {
+
+
 
     function validateName() {
         if (checkLength(name.value, 1) === true) {
@@ -86,22 +89,33 @@ export function validateContact() {
         }
     }
 
-    function validateForm() {
+    function buttonEnable() {
+        if (checkLength(name.value, 1) === true && checkEmail(email.value) === true &&
+            checkLength(message.value, 9) === true) {
+            contactButton.style.opacity = 1;
+            contactButton.disabled = false;
+        } else {
+            contactButton.style.opacity = .4;
+            contactButton.disabled = true;
+        }
+    }
+
+    function validateForm(event) {
 
         if (checkLength(name.value, 1) === true && checkEmail(email.value) === true &&
             checkLength(message.value, 9) === true) {
-            formSuccess.style.display = "block";
+            // formSuccess.style.display = "block";
             name.style.border = "1px solid var(--grey)";
             email.style.border = "1px solid var(--grey)";
             message.style.border = "1px solid var(--grey)";
-            form.reset();
         } else {
+            event.preventDefault();
             formSuccess.style.display = "none";
         }
         //this will hide success message after 7 seconds
-        setInterval(function () {
-            formSuccess.style.display = "none";
-        }, 7000)
+        // setInterval(function () {
+        //     formSuccess.style.display = "none";
+        // }, 7000)
 
     }
 
@@ -112,6 +126,11 @@ export function validateContact() {
     message.addEventListener("blur", validateMessage);
     message.addEventListener("input", validateMessageInput);
     form.addEventListener("submit", validateForm);
+    form.addEventListener("input", buttonEnable);
+
+    window.addEventListener("pageshow", () => {
+        form.reset();
+    });
 }
 
 function checkLength(value, len) {

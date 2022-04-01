@@ -8797,6 +8797,7 @@ body {
       align-self: center;
   cursor: pointer;
   font-size: inherit;
+  opacity: .4;
 }
 
 .btn-submit:hover {
