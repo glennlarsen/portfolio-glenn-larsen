@@ -32,7 +32,7 @@
 .nav-link {
   border: 1px solid $color-primary !important;
   color: white;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1rem;
   cursor: pointer;
 
@@ -50,6 +50,7 @@
   background: white;
   border-radius: 0 8px 8px 8px;
   padding: 1rem;
+  margin-top: 1px;
   color: black;
 
   ul {
