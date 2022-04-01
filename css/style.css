@@ -8711,6 +8711,10 @@ body {
   margin: 1em auto;
 }
 
+.navigation {
+  z-index: 1000;
+}
+
 .nav-btn {
   border: 3px solid white;
   background: transparent;
