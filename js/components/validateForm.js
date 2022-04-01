@@ -86,8 +86,7 @@ export function validateContact() {
         }
     }
 
-    function validateForm(event) {
-        event.preventDefault();
+    function validateForm() {
 
         if (checkLength(name.value, 1) === true && checkEmail(email.value) === true &&
             checkLength(message.value, 9) === true) {
