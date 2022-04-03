@@ -10,8 +10,6 @@ const contactButton = document.querySelector(".btn-submit");
 
 export function validateContact() {
 
-
-
     function validateName() {
         if (checkLength(name.value, 1) === true) {
             name.style.borderBottom = "4px solid green";
@@ -91,7 +89,7 @@ export function validateContact() {
 
     function buttonEnable() {
         if (checkLength(name.value, 1) === true && checkEmail(email.value) === true &&
-            checkLength(message.value, 9) === true) {
+        checkLength(message.value, 9) === true) {
             contactButton.style.opacity = 1;
             contactButton.disabled = false;
         } else {
@@ -103,14 +101,14 @@ export function validateContact() {
     function validateForm(event) {
 
         if (checkLength(name.value, 1) === true && checkEmail(email.value) === true &&
-            checkLength(message.value, 9) === true) {
+        checkLength(message.value, 9) === true) {
             // formSuccess.style.display = "block";
             name.style.border = "1px solid var(--grey)";
             email.style.border = "1px solid var(--grey)";
             message.style.border = "1px solid var(--grey)";
         } else {
             event.preventDefault();
-            formSuccess.style.display = "none";
+            // formSuccess.style.display = "none";
         }
         //this will hide success message after 7 seconds
         // setInterval(function () {
@@ -131,6 +129,7 @@ export function validateContact() {
     window.addEventListener("pageshow", () => {
         form.reset();
     });
+
 }
 
 function checkLength(value, len) {
@@ -146,3 +145,4 @@ function checkEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
+

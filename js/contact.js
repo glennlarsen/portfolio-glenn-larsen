@@ -1,5 +1,5 @@
 import navigation from "./components/navigation.js";
-import { validateContact } from "./components/validateForm.js";
+import { validateContact } from "./components/validateContact.js";
 
 navigation();
 
