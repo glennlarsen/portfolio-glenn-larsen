@@ -1,24 +1,22 @@
 .about {
-    max-width: 600px;
-    margin: 1em auto;
-    overflow-y: auto;
+  max-width: 600px;
+  margin: 1em auto;
+  overflow-y: auto;
 
-    @media screen and (min-width: 750px) {
-          overflow-y: none;
-      }
+  @media screen and (min-width: 750px) {
+    overflow-y: initial;
+  }
 }
 
 .cv {
-    font-size: 1.2em;
-    margin: 1em;
-    
-    a {
-        color: $color-primary;
+  font-size: 1.2em;
+  margin: 1em;
 
-        &:hover {
-            filter: brightness(1.2);
-        }
+  a {
+    color: $color-primary;
 
+    &:hover {
+      filter: brightness(1.2);
     }
-
+  }
 }

@@ -9149,7 +9149,7 @@ h3 {
 
 @media screen and (min-width: 750px) {
   .about {
-    overflow-y: none;
+    overflow-y: initial;
   }
 }
 
